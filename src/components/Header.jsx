@@ -7,7 +7,7 @@ import { IoMenu } from "react-icons/io5";
 function Header() {
     return (
         <>
-            <header className="bg-[#242145] text-white sticky top-0">
+            <header className="bg-[#242145] text-white sticky top-0 z-[99999]">
 
                 <div className="md:block hidden bg-[#1B1834] py-2">
                     <div className="container mx-auto py-2 px-4 flex justify-end items-center">

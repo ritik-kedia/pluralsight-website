@@ -3,8 +3,8 @@ import React from 'react'
 function HeroSection() {
     return (
         <>
-            <div className="w-full h-full pt-4 bg-gradient-to-l from-[#242145] via-[#DD1874] to-[#242145]">
-                <main className="pt-20 mt-8 mx-auto max-w-[1340px] rounded-xl bg-gradient-to-r from-[#1C1835] via-[#6B154C] to-[#551853]">
+            <div className="w-full h-full pt-4  next">
+                <main className="pt-20 mt-8 mx-auto max-w-[1340px] rounded-xl prev">
                     <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.25rem] font-bold text-center text-white mb-4">
                         Pluralsight empowers you to <br /> deliver faster
                     </h1>
@@ -25,7 +25,7 @@ function HeroSection() {
                         <div className="flex justify-center mt-10 md:mb-14">
                             <img src="/images/hero-logo.svg" alt="" className='w-[200px] h-[40px]' />
                         </div>
-                        <img src="/images/heroSection.webp" alt="" className="w-full p-6 md:p-20 rounded-lg" />
+                        <img src="/images/heroSection.webp" alt="" className="w-full px-6 md:px-20 rounded-lg" />
                     </div>
                 </main>
 
