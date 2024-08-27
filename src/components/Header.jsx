@@ -2,16 +2,16 @@ import React from 'react'
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoSearchSharp } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 
 function Header() {
     return (
         <>
             <header className="bg-[#242145] text-white sticky top-0 z-[99999]">
-
                 <div className="md:block hidden bg-[#1B1834] py-2">
                     <div className="container mx-auto py-2 px-4 flex justify-end items-center">
-                        <nav className="text-[0.9rem] space-x-6 flex items-center">
+                        <nav className=" hidden text-[0.9rem] space-x-6 md:flex items-center">
                             <div className="flex space-x-6">
                                 <a
                                     href="/"
@@ -66,20 +66,23 @@ function Header() {
                     </div>
 
 
-                    <div className="flex items-center space-x-12 font-semibold">
+                    <div className="flex items-center  font-bold">
 
-                        <div className='hidden md:flex items-center gap-4 mr-6'>
+                        <div className='hidden md:flex items-center gap-4 mr-10'>
                             <IoSearchSharp className="text-white w-6 h-6 cursor-pointer hover:text-pink-500" />
 
-                            <button className="hidden md:inline-block border border-white text-white px-6 py-2 rounded-full hover:bg-[#6f63f8] hover:text-[white]">
+                            <button className="hidden md:inline-block border border-[#585fa2] text-white px-8 py-[0.6rem] rounded-full hover:bg-[#585fa2] hover:text-[white]">
                                 Contact Sales
                             </button>
 
                         </div>
 
-                        <button className="hidden md:inline-block bg-[#e7005e] hover:bg-[#FF1675] text-white px-7 py-2 rounded-full">
-                            View Plans
-                        </button>
+                        <Link to={"/course"}>
+                            <button className="hidden md:inline-block bg-[#e7005e] hover:bg-[#FF1675] text-white px-8 py-[0.6rem] rounded-full">
+                                View Plans
+                            </button>
+                        </Link>
+
                         <div className=' flex md:hidden items-center justify-end'>
                             <IoMenu fontSize={30} />
                         </div>

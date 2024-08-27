@@ -14,9 +14,38 @@
 }
 
 
-.product{
+.product {
     background-image: url(../public/images/products-halftone-white.png);
     background-repeat: no-repeat;
     background-position: center right;
-    background-size:60%;
+    background-size: 60%;
+}
+
+.solution {
+    background-blend-mode: overlay;
+    background-color: #2A2754 !important;
+    background-image: url(../public/images/solution-bg-3.png);
+    background-repeat: no-repeat;
+    background-position: left -30px;
+    background-size: contain;
+}
+
+.main-banner {
+    background: linear-gradient(104.04deg, #FF1675 0%, #FF7B01 100%);
+    border-radius: 16px;
+}
+
+.cloud-guru {
+    background-image: url(../public/images/cloud-guru-culture.webp);
+    background-position: -59px 0px;
+    background-size: 115%;
+    background-repeat: no-repeat;
+}
+
+.future {
+    background-image: url(../public/images/BG-Freeform-darkblue-solution.webp);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    border-bottom: none;
+    background-size: 72%;
 }

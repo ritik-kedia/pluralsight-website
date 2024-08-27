@@ -1,18 +1,42 @@
 import React from 'react'
-import Header from './components/Header'
-import HeroSection from './components/HeroSection'
-import Pluralintro from './components/Pluralintro'
-import OnlineDemo from './components/OnlineDemo'
-import Product from './components/Product'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Home from './pages/Home'
+import Courses from './pages/Courses'
+import CourseDetails from './pages/CourseDetails'
+import CoursePreview from './pages/CoursePreview'
 
 function App() {
+
+  const routes = createBrowserRouter(
+    [
+      {
+        path: "/",
+        element: <Home />
+
+      },
+
+      {
+        path: "/course",
+        element: <Courses />
+      },
+
+      {
+        path: "/course-details/:id",
+        element: <CourseDetails />
+      },
+
+      {
+        path: "course-preview/:id",
+        element: <CoursePreview />
+      }
+    ]
+  )
+
+
+
   return (
     <>
-      <Header />
-      <HeroSection />
-      <Pluralintro />
-      <OnlineDemo />
-      <Product/>
+      <RouterProvider router={routes} />
     </>
   )
 }
